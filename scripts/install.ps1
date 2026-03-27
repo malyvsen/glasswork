@@ -10,5 +10,6 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 scoop install git # required for extras bucket
 scoop bucket add extras
 scoop install uv
+scoop install fnm
 
 Write-Host "Done." -ForegroundColor Green
