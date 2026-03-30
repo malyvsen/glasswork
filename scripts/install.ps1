@@ -12,4 +12,6 @@ scoop bucket add extras
 scoop install uv
 scoop install fnm
 
+winget install -e --id Docker.DockerDesktop
+
 Write-Host "Done." -ForegroundColor Green
