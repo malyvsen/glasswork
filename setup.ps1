@@ -3,10 +3,11 @@
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
-$scriptDir = Join-Path $repoRoot "scripts"
+$setupDir = Join-Path $repoRoot "setup"
 
-& "$scriptDir\install.ps1"
-& "$scriptDir\git-setup.ps1"
-& "$scriptDir\terminal-setup.ps1"
-& "$scriptDir\wsl.ps1"
-& "$scriptDir\copy-home.ps1"
+& "$setupDir\install.ps1"
+& "$setupDir\git.ps1"
+& "$setupDir\terminal.ps1"
+& "$setupDir\wsl.ps1"
+& "$setupDir\dev-freedom.ps1"
+& "$setupDir\copy-home.ps1"
