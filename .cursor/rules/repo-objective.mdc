@@ -1,0 +1,12 @@
+---
+description: What this repo is for and how this should influence design choices
+alwaysApply: true
+---
+
+# Repository objective
+
+This repositoryexists to document and cement the setup of one particular machine. It is not a reusable setup script. This means:
+
+- Keep behavior opinionated - no optional flags which could lead to confusion as to what was actually applied.
+- Keep all setup scripts idempotent - the user re-runs the setup scripts from time to time in order to make sure their machine is in line with the setup in this repo. They actually first make changes to this repo and then propagate to their machine, not the other way around.
+- Keep things simple - since this repo doubles as documentation, it should be quickly legible.
